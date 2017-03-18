@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.dnastudios.fasylgh.fragments.PaymentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        >
+
+        <TextView
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:text="Easily pay all your fees here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/balanceTv"
+            android:textSize="18sp"
+            android:text="@string/balance"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/customer_name"
+                android:textSize="18sp"
+                tools:text="Derrick Adjei"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/branch_name"
+                android:textSize="18sp"
+                tools:text="Kumasi"
+                android:paddingTop="5dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amount_et"
+                android:hint="@string/amount"
+                android:textSize="18sp"
+                android:inputType="numberDecimal"
+                android:drawableLeft="@drawable/ic_attach_money_green_18dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_button"
+            android:textSize="18sp"
+            android:id="@+id/payBtn"
+            android:textColor="@android:color/white"
+            android:text="Pay"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>
